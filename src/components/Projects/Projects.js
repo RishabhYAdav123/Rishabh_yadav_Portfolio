@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import gesture from "../../Assets/Projects/gesture.jpg";
+import loan from "../../Assets/Projects/loan.jpg";
+import medical from "../../Assets/Projects/medical.jpg";
+import airline from "../../Assets/Projects/airline.jpg";
+import cat from "../../Assets/Projects/catdog.jpg";
+import bigmartsale from "../../Assets/Projects/bigmart.jpg";
 
 function Projects() {
   return (
@@ -23,67 +23,66 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={airline}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Airline-Satisfaction-Predictor"
+              description="The Airline Satisfaction Predictor is a machine learning-based system designed to predict passenger satisfaction levels based on various factors such as flight experience, service quality, and personal preferences. This model analyzes structured customer feedback, flight details, and other key parameters to classify whether a passenger is satisfied or dissatisfied with their airline experience"
+              ghLink="https://github.com/RishabhYAdav123/Airline-Satisfaction-Predictor"
+              //demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={bigmartsale}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Big-Mart-sale-Predictor"
+              description="The Big Mart Sale Predictor is a machine learning-based system designed to predict the sales of various products across multiple Big Mart stores. This predictive model analyzes historical sales data, product attributes, and store-related factors to estimate future sales, helping businesses optimize inventory, pricing, and promotions.My personal blog page build with Next.js and Tailwind Css"
+              ghLink="https://github.com/RishabhYAdav123/Big_mart_sales_prediction"
+              //demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={medical}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Medical-Insurance_Predictor"
+              description="The Medical Insurance Cost Predictor is a machine learning-based system that estimates the insurance premium a person needs to pay based on various factors such as age, BMI, smoking habits, and medical history. By analyzing these factors, the model helps insurance companies assess risks and allows individuals to understand potential insurance costs"
+              ghLink="https://github.com/RishabhYAdav123/medical_insurance_prediction"
+              //demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={gesture}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Nexagestura"
+              description="NexaGestura is a gesture-based system for controlling volume and brightness using hand movements. It uses OpenCV, MediaPipe, and Python to track gestures in real-time, providing a seamless, touch-free experience. No extra hardware is needed—just a webcam! Future plans include custom gestures and voice integration. 🚀."
+              ghLink="https://github.com/RishabhYAdav123/Nexagestura"
+              //demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={cat}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Cat-Dog Classifier"
+              description="Cat-Dog Classifier is a deep learning model that classifies images as cats or dogs using Convolutional Neural Networks (CNNs). Built with TensorFlow, Keras, and OpenCV, it processes images, extracts features, and predicts with high accuracy. The model is trained on a labeled dataset and supports real-time classification. 🐱🐶🚀"
+              ghLink="https://github.com/RishabhYAdav123/Cat_Dog_classification"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={loan}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Loan Approval Prediction"
+              description="Loan Approval Prediction is a machine learning model that predicts loan approval based on applicant data. Built using Python, Scikit-Learn, Pandas, and Flask, it processes factors like income, credit score, and loan amount to classify approvals. It supports real-time predictions and can be integrated into financial systems. 💰📊🚀"
+              ghLink="https://github.com/18Prachi/Loan-Approval-Prediction-System"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
